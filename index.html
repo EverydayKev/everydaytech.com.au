@@ -163,6 +163,45 @@
       color: #fff; line-height: 1.3;
     }
 
+    /* ── LAUNCH BANNER ── */
+    .page-launch {
+      background: #fff4e6;
+      border-top: 1px solid rgba(252, 140, 6, 0.25);
+      border-bottom: 1px solid rgba(252, 140, 6, 0.25);
+      padding: clamp(1.5rem, 3vw, 2rem) clamp(2rem, 6vw, 5rem);
+    }
+    .page-launch__inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+    }
+    .page-launch__text {
+      font-family: var(--et-font-body, 'Open Sans', Arial, sans-serif);
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      color: var(--et-color-text, #1A0E00);
+      line-height: 1.5;
+    }
+    .page-launch__text strong {
+      font-weight: 700;
+      color: var(--et-brand-primary, #fc8c06);
+    }
+    .page-launch a.et-btn {
+      white-space: nowrap;
+    }
+
+    .page-book__text .et-amazon-note {
+      font-style: italic;
+      font-size: 0.92rem;
+      color: var(--et-color-text-muted, #6B5B45);
+      line-height: 1.6;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+
     /* ── BOOK: pure #ffffff, near-lossless cover ── */
     .page-book-section {
       background: #ffffff;
@@ -344,6 +383,16 @@
     <p class="page-mission__text">"Taking the fear and mystery out of technology."</p>
   </section>
 
+  <!-- LAUNCH BANNER -->
+  <section class="page-launch" id="launch">
+    <div class="page-launch__inner">
+      <p class="page-launch__text">
+        <strong>Official Book Launch</strong> at Fullers Bookshop, Hobart. 16th July 2026.
+      </p>
+      <a href="https://www.trybooking.com/events/landing/1604624" target="_blank" rel="noopener" class="et-btn et-btn--primary">Get your tickets here</a>
+    </div>
+  </section>
+
   <!-- BOOK -->
   <section class="page-book-section" id="book">
     <div class="page-book">
@@ -357,6 +406,7 @@
           <li>Kept on a shelf, not buried online</li>
         </ul>
         <p>It doesn't try to turn you into a tech expert. It helps everyday people become scam-resilient and feel safe online.</p>
+        <p class="et-amazon-note">I know Amazon isn't everyone's preferred choice, especially in the book community. But as an independent author, it's how I can reach people across the country. If it works for you, the link is there.</p>
         <a href="https://amzn.asia/d/0WAhTuF" target="_blank" rel="noopener"
            class="et-btn et-btn--primary" style="margin-top:0.5rem">
           Buy on Amazon →
